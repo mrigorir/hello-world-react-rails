@@ -15,6 +15,6 @@ class Greetings::MessagesController < ApplicationController
   def hello
     @greeting = Message.find(Message.pluck(:id).sample)
 
-    render json: @greeting.message
+    render json: @greeting
   end
 end

@@ -1,8 +1,8 @@
-
+import getRandomGreeting from '../../services/greetingAPI';
 // Actions
-const FETCH_STARTED = 'hello-rails-react/app/javascript/redux/greeting/FETCH_STARTED';
-const FETCH_SUCCEDED = 'hello-rails-react/app/javascript/redux/greeting/FETCH_SUCCEDED';
-const FETCH_FAILED = 'hello-rails-react/app/javascript/redux/greeting/FETCH_FAILED';
+const FETCH_STARTED = 'hello-rails-react/app/javascript/redux/greetings/FETCH_STARTED';
+const FETCH_SUCCEDED = 'hello-rails-react/app/javascript/redux/greetings/FETCH_SUCCEDED';
+const FETCH_FAILED = 'hello-rails-react/app/javascript/redux/greetings/FETCH_FAILED';
 
 // Initial State
 
@@ -29,7 +29,7 @@ export const getGreetingFailed = (payload) => ({
 export const fetchGreeting = () => async (dispatch) => {
   dispatch(getGreetingStarted());
   try {
-    const data = await (await fetch('greetings/random-greeting.json')).json();
+    const data = await getRandomGreeting();
     dispatch(getGreetingSuccess(data.message));
   } catch (err) {
     dispatch(getGreetingFailed(err.toString()));
@@ -37,7 +37,7 @@ export const fetchGreeting = () => async (dispatch) => {
 };
 
 // Reducer
-const reducer = (state = initialState, action) => {
+const greetingsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_STARTED:
       return {
@@ -61,4 +61,4 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+export default greetingsReducer;

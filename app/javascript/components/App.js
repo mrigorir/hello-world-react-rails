@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
-import store from '../redux/configureStore';
+import store from '../redux/configStore';
 
 import Greeting from './Greeting';
 

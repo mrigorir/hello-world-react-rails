@@ -25,5 +25,3 @@ Message.create!([
     message: 'Hello#5'
   },
 ])
-
-p "Created #{Message.count} greetings"
