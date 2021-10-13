@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import greetingsReducer, { fetchGreeting } from '../redux/greetings/greetings';
+import { fetchGreeting } from '../redux/greetings/greetings';
 
 const Greeting = () => {
   const dispatch = useDispatch();
@@ -16,7 +16,11 @@ const Greeting = () => {
       <h1>
         Random greetings:
       </h1>
-      <p> {greetings} </p>
+      <p>
+        {' '}
+        {greetings}
+        {' '}
+      </p>
     </>
   );
 };
