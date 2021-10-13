@@ -2,7 +2,8 @@
 
 # React-Rails "Hello-World" Project
 
-> For this project I've Implemented a connection between a Ruby on Rails back-end and React front-end; the goal is understand the pros and cons of different approaches of connecting Ruby on Rails back-end with React front-end using the `react-rails` gem. This gem allows to build React components as a part of Rails JavaScript and serve it in a component, react_component, to be used in a regular ERB file.
+> For this project I've Implemented a connection between a Ruby on Rails backend and React front-end; the goal is to understand the pros and cons of different approaches of connecting Ruby on Rails back-end with React front-end using the `react-rails` gem. This gem allows building React components as a part of Rails JavaScript and serves it in a component, react_component, to be used in a regular ERB file.
+
 ## This project was built with:
 
 - ruby v2.7.2 
@@ -25,7 +26,7 @@
 
 - react-logger
 
-- postgres
+- Postgres
 
 - rubocop
 

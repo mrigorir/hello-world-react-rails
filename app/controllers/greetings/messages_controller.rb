@@ -1,10 +1,10 @@
 class Greetings::MessagesController < ApplicationController
   def index
     render json: {
-      :messages => [
+      messages: [
         {
           message: 'Hello'
-        }, 
+        },
         {
           message: 'Hi'
         }
