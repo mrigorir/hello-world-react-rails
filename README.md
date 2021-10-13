@@ -32,6 +32,10 @@
 
 - eslint
 
+
+## Image Preview
+
+![Screenshot Home Page](./app/assets/images/capture.jpg)
 ## Prerequisites
 
 Text Editor (VSCode is suggested.), Ruby Rails Bundler, Yarn, SQL, Postgres, React dependencies
@@ -133,6 +137,11 @@ Start server with:
 Open `http://localhost:3000/` in your browser.
 
 
+### In case you wish to check aditional endpoints
+
+- **http://localhost:3000/messages**
+
+- **http://localhost:3000/greetings/random-greeting**
 
 ### Run tests
 
